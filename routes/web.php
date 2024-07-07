@@ -30,25 +30,9 @@ Route::get('/about', function () {
     ]);
 });
 
-// Route::get('/mahasiswa, 'MahasiswaController@index');
-
-// // Route::get('/posts', [PostController::class, 'index']);
-// // Route::get('/posts/{post:slug}', [PostController::class, 'show']);
-
-// // Route::get('/categories', function() {
-// //     return view('categories', [
-// //         'title' => 'Post Categories',
-// //         'active' => 'categories',
-// //         'categories' => Category::all()
-// //     ]);
-// // });
-
-
-// // Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
-// // Route::post('/login', [LoginController::class, 'authenticate']);
-// // Route::post('/logout', [LoginController::class, 'logout']);
-
-// // Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
-// // Route::post('/register', [RegisterController::class, 'store']);
-
-// // Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
+Route::get('/blog', function () {
+    return view('posts', [
+        'title' => 'Posts',
+        'active' => 'posts'
+    ]);
+});
